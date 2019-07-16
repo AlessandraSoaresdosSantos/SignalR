@@ -1,17 +1,25 @@
 ﻿@page
-<div>
-    <input type="button" id="joinGroup" value="Join Private Group" />
+<div style="margin-bottom:10px">
+    <input type="button" id="joinGroup" value="Participar Grupo Particular" />
 </div>
 
-<textarea name="message" id="message"></textarea>
-<select id="group">
-    <option value="All">Everyone</option>
-    <option value="Myself">Myself</option>
-    <option value="PrivateGroup">Private Group</option>
-</select>
-<input type="button" id="sendButton" value="Send Message" />
+<div style="margin-bottom:10px">
+<textarea name="message" id="message" cols="25"></textarea>
+</div>
+
+<div style="margin-bottom:10px">
+    <select id="group">
+        <option value="All">Todos</option>
+        <option value="Myself">Individual</option>
+        <option value="PrivateGroup">Grupo Particular</option>
+    </select>
+</div>
+
+<div style="margin-bottom:10px">
+    <input type="button" id="sendButton" value="Enviar Mensagem" />
+</div>
 
 <div id="messages"></div>
 
-<script src="~/lib/signalr.js"></script>
-<script src="~/js/message.js"></script>
+    <script src="~/lib/signalr.js"></script>
+    <script src="~/js/message.js"></script>

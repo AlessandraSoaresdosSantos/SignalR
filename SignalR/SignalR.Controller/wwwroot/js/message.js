@@ -2,7 +2,7 @@
 
 var connection = new signalR.HubConnectionBuilder()
     .withUrl("/messages", {
-        accessTokenFactory: () => "testing"
+        accessTokenFactory: () => "teste"
     })
     .build();
 
